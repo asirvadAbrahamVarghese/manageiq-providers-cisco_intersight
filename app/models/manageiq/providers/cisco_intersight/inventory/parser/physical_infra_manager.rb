@@ -196,7 +196,8 @@ module ManageIQ::Providers::CiscoIntersight
         :physical_rack    => physical_rack, # nil for now
         :power_state      => server.oper_power_state,
         :raw_power_state  => server.oper_power_state,
-        :manufacturer     => server.vendor
+        :manufacturer     => server.vendor,
+        :vendor           => "cisco"
       )
     end
 
